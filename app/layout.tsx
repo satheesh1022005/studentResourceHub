@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { AuthProvider } from "@/hooks/useAuth"
 import "./globals.css"
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: "Student Resource Hub - All-in-One Learning Platform",
@@ -25,8 +26,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-3596390815097696" />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3596390815097696"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
         <AuthProvider>{children}</AuthProvider>
+        {/* <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-3596390815097696"
+          data-ad-slot="YOUR_AD_SLOT_ID" // Replace with your ad slot ID
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        /> */}
       </body>
     </html>
   )
