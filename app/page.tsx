@@ -91,7 +91,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-lg mb-4">Made with ❤️ by seniors to guide juniors</p>
+          <p className="text-lg mb-4">Made with ❤️ by <a href="https://www.linkedin.com/in/-satheesh-k/" className="hover:text-accent transition-colors"  target="_blank">satheesh k</a> to guide juniors</p>
           <div className="flex justify-center space-x-6">
             <a href="https://github.com" className="hover:text-accent transition-colors">
               GitHub

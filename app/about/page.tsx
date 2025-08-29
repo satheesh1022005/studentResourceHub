@@ -13,9 +13,6 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4 text-balance">About Student Resource Hub</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Made with ❤️ by seniors to guide juniors on their academic and professional journey.
-          </p>
         </div>
 
         {/* Mission */}
