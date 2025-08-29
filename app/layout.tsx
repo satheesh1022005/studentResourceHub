@@ -1,10 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import { AuthProvider } from "@/hooks/useAuth"
 import "./globals.css"
-import Script from 'next/script'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Student Resource Hub - All-in-One Learning Platform",
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google AdSense Meta Tag */}
         <meta name="google-adsense-account" content="ca-pub-3596390815097696" />
+        {/* Google AdSense Script */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3596390815097696"
@@ -35,16 +38,8 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={inter.className}>
         <AuthProvider>{children}</AuthProvider>
-        {/* <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-3596390815097696"
-          data-ad-slot="YOUR_AD_SLOT_ID" // Replace with your ad slot ID
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        /> */}
       </body>
     </html>
   )
