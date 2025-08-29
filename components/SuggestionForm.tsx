@@ -51,7 +51,7 @@ Best regards,
 ${formData.submitterName}
     `)
 
-    const mailtoLink = `mailto:admin@studenthub.com?subject=${subject}&body=${body}`
+    const mailtoLink = `mailto:spack1022005@gmail.com?subject=${subject}&body=${body}`
     window.location.href = mailtoLink
 
     // Reset form after submission

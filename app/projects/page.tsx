@@ -58,6 +58,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Call to Action */}
+        <h1 className="text-2xl font-bold text-center text-foreground mb-8">Have a cool project? ,share it with us</h1>
         <div className="text-center">
           <Card className="bg-accent/5 border-accent/20 max-w-2xl mx-auto">
             <CardContent className="pt-6">
@@ -76,7 +77,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Project Ideas Section */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h2 className="text-2xl font-bold text-center text-foreground mb-8">Need Project Ideas?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -94,7 +95,7 @@ export default function ProjectsPage() {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

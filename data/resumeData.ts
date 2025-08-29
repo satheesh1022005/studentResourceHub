@@ -15,37 +15,21 @@ export interface ResumeTip {
 }
 
 export const resumeTemplatesData: ResumeTemplate[] = [
-  {
+{
     id: "1",
-    name: "Modern Professional",
-    description: "Clean, ATS-friendly template perfect for tech roles",
-    features: ["ATS Optimized", "Modern Design", "Easy to Edit"],
-    downloadUrl: "https://example.com/templates/modern-professional.docx",
-    popular: true,
+    name: "Deedy CV",
+    description: "A clean, elegant LaTeX CV template suitable for 2 coulmn layouts",
+    features: ["LaTeX Template", "Elegant Design", "Professional Look"],
+    downloadUrl: "https://www.overleaf.com/latex/templates/deedy-cv/bjryvfsjdyxz",
+    popular: false,
   },
   {
     id: "2",
-    name: "Creative Portfolio",
-    description: "Showcase your projects and creativity with this visual template",
-    features: ["Visual Design", "Portfolio Section", "Color Customizable"],
-    downloadUrl: "https://example.com/templates/creative-portfolio.docx",
+    name: "Jake's Resume",
+    description: "Minimal and modern LaTeX resume template for single column layouts",
+    features: ["LaTeX Template", "Minimal Design", "ATS-Friendly"],
+    downloadUrl: "https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs",
     popular: false,
-  },
-  {
-    id: "3",
-    name: "Academic Research",
-    description: "Perfect for academic positions and research roles",
-    features: ["Publication Ready", "Academic Format", "References Section"],
-    downloadUrl: "https://example.com/templates/academic-research.docx",
-    popular: false,
-  },
-  {
-    id: "4",
-    name: "Entry Level",
-    description: "Great for students and new graduates with limited experience",
-    features: ["Student Friendly", "Skills Focused", "Education Emphasis"],
-    downloadUrl: "https://example.com/templates/entry-level.docx",
-    popular: true,
   },
 ]
 

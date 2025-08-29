@@ -70,7 +70,7 @@ export default function AboutPage() {
         </Card>
 
         {/* Community */}
-        <Card className="mb-8">
+        {/* <Card className="mb-8">
           <CardContent className="pt-6">
             <h2 className="text-2xl font-semibold text-foreground mb-4">Join Our Community</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -99,10 +99,10 @@ export default function AboutPage() {
               </Link>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
 
         {/* Contributors */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <Card className="bg-accent/5 border-accent/20">
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">Want to Contribute?</h3>
@@ -114,7 +114,7 @@ export default function AboutPage() {
               </Link>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </div>
   )
