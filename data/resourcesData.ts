@@ -12,8 +12,7 @@ export interface ResourceCategory {
   category: string
   icon: string
   resources?: Resource[]
-  subcategories?: SubCategory[] 
-}
+  subcategories?: SubCategory[] }
 export const resourcesData: ResourceCategory[] = [
   {
     category: "Roadmaps",

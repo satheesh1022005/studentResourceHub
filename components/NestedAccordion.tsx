@@ -19,7 +19,7 @@ export function NestedAccordion({ subcategories, level = 0 }: NestedAccordionPro
               <ChevronRight className="h-4 w-4 text-muted-foreground" />
               <span className="font-medium">{subcategory.name}</span>
               <span className="text-sm text-muted-foreground ml-auto mr-4">
-                {subcategory.resources?.length || 0} resources
+                {subcategory.resources?.length || subcategory.subcategories?.length || 0} resources
               </span>
             </div>
           </AccordionTrigger>

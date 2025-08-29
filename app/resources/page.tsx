@@ -67,23 +67,20 @@ export default function ResourcesPage() {
   }, [searchQuery])
 
   const getTotalResources = (categories: ResourceCategory[]): number => {
-    return categories.reduce((total, category) => {
-      let categoryTotal = category.resources?.length || 0
+    const countResourcesRecursively = (item: ResourceCategory | SubCategory): number => {
+      let total = item.resources?.length || 0
 
-      if (category.subcategories) {
-        const countSubcategoryResources = (subcategories: SubCategory[]): number => {
-          return subcategories.reduce((subTotal, subcategory) => {
-            let subCategoryTotal = subcategory.resources?.length || 0
-            if (subcategory.subcategories) {
-              subCategoryTotal += countSubcategoryResources(subcategory.subcategories)
-            }
-            return subTotal + subCategoryTotal
-          }, 0)
-        }
-        categoryTotal += countSubcategoryResources(category.subcategories)
+      if (item.subcategories) {
+        total += item.subcategories.reduce((subTotal, subcategory) => {
+          return subTotal + countResourcesRecursively(subcategory)
+        }, 0)
       }
 
-      return total + categoryTotal
+      return total
+    }
+
+    return categories.reduce((total, category) => {
+      return total + countResourcesRecursively(category)
     }, 0)
   }
 

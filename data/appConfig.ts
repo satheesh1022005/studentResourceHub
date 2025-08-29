@@ -15,7 +15,7 @@ export function simpleHash(str: string): string {
 
 // Store the pre-computed hash of "admin123" instead of computing it each time
 // This value is the result of simpleHash("admin123")
-const DEFAULT_HASH = "-969161597"
+const DEFAULT_HASH = "-1250486015"
 
 let appConfig: AppConfig = {
   adminPasswordHash: DEFAULT_HASH,
